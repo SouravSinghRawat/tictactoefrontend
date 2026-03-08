@@ -11,7 +11,7 @@ function App() {
   const stompClient = useRef(null);
 
   useEffect(() => {
-    const socket = new SockJS('https://tictactoebackend-1-wl9g.onrender.com'); //
+    const socket = new SockJS("https://tictactoebackend-1-wl9g.onrender.com");
     const client = new Client({
       webSocketFactory: () => socket,
       onConnect: () => {
